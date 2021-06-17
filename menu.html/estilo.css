@@ -1,0 +1,109 @@
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+            
+            a {
+                text-decoration: nome;
+                color: black;
+            }
+            
+            h1 {
+                margin: 0;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+            }
+            
+            body {
+                font-family: arial;
+                background: url("");
+                background-size: 200%;
+                background-color: rgba(161, 161, 168, 0.534);
+                display: flex;
+                flex-direction: center;
+            }
+            
+            ul {
+                list-style: none;
+            }
+            
+            img {
+                width: 25px;
+            }
+            
+            IMG.displayed {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+            
+            input[type="checkbox"] {
+                display: none;
+            }
+            
+            nav {
+                background-color: rgba(197, 197, 214, 0.3);
+                width: 350px;
+                height: 400px;
+                left: -350px;
+                position: absolute;
+                transition: all .5s;
+            }
+            
+            input[type="checkbox"]:checked~nav {
+                transform: translateX(350px);
+            }
+            
+            ul {
+                top: 100px;
+                position: absolute;
+                width: 100%;
+            }
+            
+            a {
+                display: block;
+                padding: 20px 50px;
+                color: rgb(0, 0, 0);
+            }
+            
+            a:hover {
+                background-color: rgb(82, 169, 245);
+                color: black;
+            }
+            
+            label {
+                padding: 20px;
+                position: absolute;
+                z-index: 1;
+                margin: 0;
+                position: absolute;
+                top: 10%;
+                left: 80%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%)
+            }
+            
+            #slider {
+                width: 500%;
+                max-width: 1500px;
+                height: 50vw;
+                max-height: 200px;
+                position: relative;
+            }
+            
+            #slider img {
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 10%;
+                object-fit: cover;
+                transition: opacity 500ms;
+            }
+            
+            #slider img.selected {
+                opacity: 1;
+            }
